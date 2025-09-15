@@ -4,7 +4,6 @@ import com.example.findex.common.openApi.dto.IndexApiResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -15,7 +14,6 @@ import java.time.format.DateTimeFormatter;
 
 @Service
 @RequiredArgsConstructor
-@PropertySource("classpath:env.properties")
 @Slf4j
 public class OpenApiService {
 
