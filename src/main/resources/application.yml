@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: ${PGUSER}
     password: ${DB_PASSWORD}
-    url: ${DATABASE_URL}
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
 
   # --- JPA (Hibernate) Configuration ---
   jpa:
