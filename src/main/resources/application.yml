@@ -4,9 +4,9 @@ spring:
   # --- Database Configuration (PostgreSQL) ---
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: postgres
+    username: ${PGUSER}
     password: ${DB_PASSWORD}
-    url: jdbc:postgresql://localhost:5432/findex
+    url: ${DATABASE_URL}
 
   # --- JPA (Hibernate) Configuration ---
   jpa:
