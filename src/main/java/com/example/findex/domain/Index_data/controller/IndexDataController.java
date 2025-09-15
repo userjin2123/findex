@@ -81,7 +81,7 @@ public class IndexDataController {
     }
 
     @GetMapping("/performance/rank")
-    public ResponseEntity<List<RankedIndexPerformanceDto>> getPerformanceRanking(
+    public ResponseEntity<List<RankedIndexPerformanceDto>> getPerformanceRanking2(
             @RequestParam(required = false) Long indexInfoId,
             @RequestParam(defaultValue = "DAILY") PeriodType periodType,
             @RequestParam(defaultValue = "10") Integer limit) {
