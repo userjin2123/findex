@@ -6,15 +6,15 @@ import com.example.findex.domain.Index_data.dto.IndexDataCreateRequest;
 import com.example.findex.domain.Index_data.dto.IndexDataDto;
 import com.example.findex.domain.Index_data.dto.IndexDataUpdateRequest;
 import com.example.findex.domain.Index_data.entity.IndexData;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.Named;
+import org.mapstruct.*;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-@Mapper(componentModel = "spring")
+@Mapper(
+        componentModel = "spring",
+        nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE
+)
 public interface IndexDataMapper {
 
     SourceType USER_SOURCE_TYPE = SourceType.USER;
